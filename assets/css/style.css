@@ -1,0 +1,124 @@
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --grey: #bebebe;
+  --light-grey: #e3e3e3;
+  --navy-blue: #000080;
+  --indigo-blue: #3f00ff;
+  --cobalt-blue: #0047ab;
+  --custom-setting: .25rem 1rem .25rem 1rem;
+  --box-padding: 1rem 2rem 1rem 2rem;
+  --default-border: 1px solid var(--black);
+  --default-border-radius: .25rem;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.p30 {
+  width: 30%;
+}
+.p70 {
+  width: 70%;
+}
+#weather-page {
+  height: 100vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  border: var(--default-border);
+}
+
+#header-section {
+  justify-content: center;
+}
+
+.display-toggle {
+  margin-left: 25rem;
+  margin-top: .5rem;
+  width: 50px;
+  height: 50px;
+  background-color: var(--black);
+  border-radius: 1000px;
+  transition: .2s;
+}
+
+.display-toggle:hover {
+  cursor: pointer;
+  width: 100px;
+  box-shadow: 0px 0px 50px;
+}
+/* #main-section {
+  border: var(default-border);
+} */
+#search-section {
+  /* justify-content: center;
+  align-self: center; */
+  margin: var(--custom-setting);
+  border: var(--default-border);
+}
+#search-form {
+  text-align: center;
+  margin: var(--custom-setting);
+  /* border: var(--default-border); */
+}
+#search-city {
+  font-weight: bold;
+  font-size: large;
+  color: var(--white);
+  outline: none;
+  border: none;
+  padding: var(--custom-setting);
+  border-radius: var(--default-border-radius);
+  background-color: var(--black);
+}
+#search-city:hover {
+  background-color: var(--black);
+}
+#search-btn {
+  /* display: block; */
+  border: none;
+  background-color: var(--light-grey);
+  padding: var(--custom-setting);
+  border-radius: var(--default-border-radius);
+  color: var(--white);
+}
+#search-btn:hover {
+  cursor: pointer;
+  background-color: var(--grey);
+  color: var(--white);
+}
+#search-btn:active {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+#current-section {
+  /* border: var(--default-border); */
+  background-color: var(--grey);
+  margin: var(--custom-setting);
+  padding: var(--custom-setting);
+  border-radius: var(--default-border-radius);
+}
+
+#forecast-section {
+  /* border: var(--default-border); */
+  background-color: var(--light-grey);
+  margin: var(--custom-setting);
+  padding: var(--custom-setting);
+  border-radius: var(--default-border-radius);
+}
+
+.box {
+  border: var(--default-border);
+  background-color: var(--white);
+  margin: var(--custom-setting);
+  padding: var(--box-padding);
+  border-radius: var(--default-border-radius);
+}
