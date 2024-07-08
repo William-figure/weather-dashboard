@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body id="weather-page" class="flex-column">
+  <header id="header-section" class="flex-row">
+    <h1 id="dashboard-header">Weather Dashboard</h1>
+    <div class="display-toggle"></div>
+  </header>
+  <main id="main-section" class="flex-row">
+    <section id="search-section" class="flex-column p30">
+      <form id="search-form">
+        <label id="search-label" for="search-city" class="dashboard-subheader"><h2>Search for a City</h2></label>
+        <input id="search-city" type="text" placeholder="Enter a City">
+        <input id="search-btn" type="submit">
+      </form>
+      <hr id="ruler">
+      <!-- History of City Name been searched -->
+    </section>
+    <section id="weather-section" class="flex-column p70">
+      <section id="current-section">
+        <div class="container">
+          <h2 class="dashboard-subheader"><span id="current-city">City</span><span id="current-date">Date</span></h2>
+          <p class="info">Temp: <span id="current-temperature"></span>&#8457;</p>
+          <p class="info">Wind: <span id="current-wind"></span>MPH</p>
+          <p class="info">Humidity: <span id="current-humidity"></span>%</p>
+        </div>
+      </section>
+      <section id="forecast-section">
+        <h3 id="forecast-header">5-Day Forecast:</h3>
+        <div class="container flex-row">
+          <div class="box">
+            <h4 class="forecast-subheader"><span>Date</span></h4>
+            <p class="info">Temp: <span id="current-temperature"></span>&#8457;</p>
+            <p class="info">Wind: <span id="current-wind"></span>MPH</p>
+            <p class="info">Humidity: <span id="current-humidity"></span>%</p>
+          </div>
+          <div class="box">
+            <h4 class="forecast-subheader"><span>Date</span></h4>
+            <p class="info">Temp: <span id="current-temperature"></span>&#8457;</p>
+            <p class="info">Wind: <span id="current-wind"></span>MPH</p>
+            <p class="info">Humidity: <span id="current-humidity"></span>%</p>
+          </div>
+          <div class="box">
+            <h4 class="forecast-subheader"><span>Date</span></h4>
+            <p class="info">Temp: <span id="current-temperature"></span>&#8457;</p>
+            <p class="info">Wind: <span id="current-wind"></span>MPH</p>
+            <p class="info">Humidity: <span id="current-humidity"></span>%</p>
+          </div>
+          <div class="box">
+            <h4 class="forecast-subheader"><span>Date</span></h4>
+            <p class="info">Temp: <span id="current-temperature"></span>&#8457;</p>
+            <p class="info">Wind: <span id="current-wind"></span>MPH</p>
+            <p class="info">Humidity: <span id="current-humidity"></span>%</p>
+          </div>
+          <div class="box">
+            <h4 class="forecast-subheader"><span>Date</span></h4>
+            <p class="info">Temp: <span id="current-temperature"></span>&#8457;</p>
+            <p class="info">Wind: <span id="current-wind"></span>MPH</p>
+            <p class="info">Humidity: <span id="current-humidity"></span>%</p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
