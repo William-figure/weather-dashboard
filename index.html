@@ -13,7 +13,7 @@
   </header>
   <main id="main-section" class="flex-row">
     <section id="search-section" class="flex-column p30">
-      <form id="search-form">
+      <form id="search-form" class="flex-column">
         <label id="search-label" for="search-city" class="dashboard-subheader"><h2>Search for a City</h2></label>
         <input id="search-city" type="text" placeholder="Enter a City">
         <input id="search-btn" type="submit">
@@ -32,7 +32,7 @@
       </section>
       <section id="forecast-section">
         <h3 id="forecast-header">5-Day Forecast:</h3>
-        <div class="container flex-row">
+        <div class="container flex-row-wrap">
           <div class="box">
             <h4 class="forecast-subheader"><span>Date</span></h4>
             <p class="info">Temp: <span id="current-temperature"></span>&#8457;</p>
