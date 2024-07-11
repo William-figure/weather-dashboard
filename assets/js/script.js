@@ -1,5 +1,7 @@
 "use strict";
 // localStorage.clear();
+// historical list items
+const listItems = document.querySelectorAll('.list');
 // current data
 const currentCityInput = document.querySelector("#current-city");
 const currentDateInput = document.querySelector("#current-date");
@@ -61,6 +63,8 @@ const mpsToMPH = (mps) => {
 const storeToLocalStorage = (key, list) => {
   localStorage.setItem(key, JSON.stringify(list));
 }
+
+const 
 
 const fetchCurWeather = (city, apiKey) => {
   const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
