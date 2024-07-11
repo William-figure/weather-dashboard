@@ -13,6 +13,24 @@
   --default-font-size: 2vh;
   --default-size: 2rem;
 }
+
+.historical-section {
+  border-radius: .25rem;
+}
+
+.list {
+  font-weight: bold;
+  list-style-type: none;
+  transition: .25s;
+}
+.list:hover {
+  padding: var(--custom-setting);
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+  border-radius: .25rem;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -68,12 +86,14 @@
   align-self: center; */
   margin: var(--custom-setting);
   border: var(--default-border);
+  border-radius: .25rem;
 }
 #search-form {
   text-align: left;
   padding: var(--custom-setting);
   margin: var(--custom-setting);
   border: var(--default-border);
+  border-radius: .25rem;
 }
 #search-city {
   font-weight: bold;
