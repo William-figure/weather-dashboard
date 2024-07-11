@@ -21,7 +21,7 @@ const searchBtn = document.querySelector("#search-btn");
 // history of search
 const historicalSearchSection = document.createElement("ul");
 // display of the history of search
-historicalSearchSection.classList = "flex-column";
+historicalSearchSection.classList = "flex-column historical-section";
 historicalSearchSection.style.textAlign = "left";
 historicalSearchSection.style.padding = ".25rem 1rem .25rem 1rem";
 historicalSearchSection.style.margin = ".25rem 1rem .25rem 1rem";
