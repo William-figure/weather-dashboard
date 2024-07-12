@@ -64,7 +64,7 @@ const displayItems = (currentStorage) => {
   }
 
 };
-window.onload = displayItems('current-data');
+// window.onload = displayItems('current-data');
 
 const kelvinToFeirenheit = (temp) => {
   const temperatureCurrentF = (
